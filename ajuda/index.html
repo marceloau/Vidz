@@ -1,0 +1,299 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>PHPVibe  v3</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="PHPVibe.com">
+	<meta name="copyright" content="PHPVibe.com">
+
+	
+	<link rel="stylesheet" href="css/style.css" media="all">
+	
+	<script src="js/jquery.1.5.1.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#008C9E;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#description">Description</a></li>
+			<li><a href="#library_functions">Installation procedure</a></li>
+			<li><a href="#api_functions">Debugging</a></li>
+			<li><a href="#fb">External Services</a></li>
+			<li><a href="#changelog">Issues troubleshooting</a></li>
+			<li><a href="#further_information">Further Information</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright PHPVibe 2009-2014<br>
+		
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>PHPVibe</h1><h2>  v3</h2><hr><ul><li>Series launched: 16/06/2012</li><li>By: PHPVibe.com</li><li><a href="http://www.PHPVibe.com">Visit website</a></li></ul></section><section id="description">
+	<h3>Description</h3><hr class="notop">
+<p>
+	With PHPVibe you get a easy-to-use, full-featured and ready-to-go multi source CMS .</p>
+
+	<strong>Requirements:</strong></p>
+<p>In order to work, PHPVibe requires the following from your hosting environment :</p>
+<h4> – mySQL database</h4>
+<p><em>SQL 4+</em></p>
+<h4> – PHP 5.0+</h4>
+<p><em>Not tested on PHP 6<br>
+</em></p>
+<h4> – Apache</h4>
+<p> webserver with <strong>mod_rewrite</strong> enabled<br>
+<em>Nginx is been reported to work flawless as well.</em></p>
+<h4> – cURL</h4>
+<p><em>For embedded video details grabbing, Youtube importer, etc</em></p>
+<h4> – GD library</h4>
+<p><em>For image resizing.</em></p>
+<h4> – Ioncube loader</h4>
+<p> 4.0 (or newer)</p>
+<h4> – Register_globals OFF</h4>
+<h4> – Safe_mode Off </h4>
+<h4> – PHPVibe license key</h4>
+<p> generated for the main domain <a href="http://store.phprevolution.com/licenses" target="_blank">here</a>.</p>
+<div class="info">None of the above are optional.</div>
+<h2>FFMPEG</h2>
+<p>FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.<br>
+It’s also needed to extract duration and thumbnails from video files.</p>
+<div class="info">FFMPEG video conversion is optional but needs the following to work</div>
+<h4> – FFMPEG 1.x+</h4>
+<p>. Compiled with Video and Audio Codecs (needs x264)</p>
+<div id="attachment_2827" style="width: 659px" class="wp-caption aligncenter"><a href="http://www.phprevolution.com/wp-content/uploads/2012/07/ffmpg.png" class="lightbox" rel="gallery-1613"><img src="http://www.phprevolution.com/wp-content/uploads/2012/07/ffmpg.png" alt="Our FFMPEG setup" width="649" height="277" class="size-full wp-image-2827"></a>
+<p class="wp-caption-text">We test and build on this FFMPEG setup</p>
+</div>
+<h4> – exec() and shell_exec()</h4>
+<p> enabled.</p>
+<div class="warning"> On some setups mod_security has been known to partially conflict with PHPVibe.</div>
+<div class="error">If you are new to this, please contact your hosting regarding this requirements.</div>
+<p>Consult <a href="http://www.phprevolution.com/forum/" target="_blank">our forum</a> if you have any trouble understanding this.
+</p>
+<p>
+	<em>Please make sure your hosting has all the requirements.</em></p>
+</section>
+<section id="library_functions">
+	<h3>Installation procedure</h3><hr class="notop">
+<h4>
+	Upload, access, install and play!</h4>
+<p>
+	Unpack you PHPVibe copy to a folder on your hard drive.</p>
+<p>
+	Copy the entire content of the folder "PHPVibe PRO 3.x" to your server. Access the website and follow the installation wizard.</p>
+<p>
+	First step is the permision steps. Please chmod all folders to 777 as requested per install process.</p>
+	<pre class="brush: plain">
+The permissions of folder "uploads/" set to 0777
+The permissions of folder "media" set to 0777
+The permissions of folder "media/thumbs" set to 0777
+The permissions of folder "cache/" set to 0777
+The permissions of folder "cache/thumbs" set to 0777
+The permissions of file "rawmedia/" set to 0777
+</pre>
+<div class="warning">If the server runs with suPHP the correct permissions are 0755 (0777 will throw an error).</div>
+	<p>To install PHPVibe you need to follow few steps:</p>
+<p><strong>Step 0: Requirements</strong></p>
+<p>Make sure your hosting has all <a href="http://phprevolution.com/requirements/" target="_blank">the requirements</a> to run PHPVibe.</p>
+<p><strong>Step 1: Config details</strong></p>
+<p>Edit the file vibe_config.php in the folder /PHPVibe PRO 3.x with your database details, site url <em>(don’t forget the ending slash)</em> and license key. We recommend Notepad++ setup to UTF-8 no-bom <em>(under Encoding)</em>.</p>
+<p><a href="http://phprevolution.com/wp-content/uploads/2013/12/sstep0.png" class="lightbox" rel="gallery-2327"><img class="aligncenter size-full wp-image-2330" alt="sstep0" src="http://phprevolution.com/wp-content/uploads/2013/12/sstep0.png" width="685" height="600"></a></p>
+<p><strong>Step 2: Upload it</strong></p>
+<p>Upload the content of the /PHPVibe PRO 3.x folder to your root or folder on the server using your favorite FTP manager.</p>
+<p style="text-align: center;"><a href="http://phprevolution.com/wp-content/uploads/2013/12/sstep1.png" class="lightbox" rel="gallery-2327"><img class="aligncenter  wp-image-2328" alt="sstep1" src="http://phprevolution.com/wp-content/uploads/2013/12/sstep1.png" width="855" height="308"></a></p>
+<p><strong>Step 3: Setup</strong> </p>
+<p>The setup manager is pretty straight forward and lets you know of all the issues and steps needed.<br>
+Here are the main:<br>
+- Folders chmod<br>
+- Database setup<br>
+- Administrator account creation<br>
+<a href="http://phprevolution.com/wp-content/uploads/2013/12/sstep3-1.png" class="lightbox" rel="gallery-2327"><img src="http://phprevolution.com/wp-content/uploads/2013/12/sstep3-1-1024x296.png" alt="sstep3-1" width="950" height="274" class="aligncenter size-large wp-image-2337"></a><br>
+<a href="http://phprevolution.com/wp-content/uploads/2013/12/ssetup3.png" class="lightbox" rel="gallery-2327"><img src="http://phprevolution.com/wp-content/uploads/2013/12/ssetup3-1024x327.png" alt="ssetup3" width="950" height="303" class="aligncenter size-large wp-image-2334"></a></p>
+<p><strong>Step 4: Crons</strong> </p>
+<p>Make sure the files <strong>cron.php and videocron.php have execute permissions</strong>.</p>
+<p><strong>Step 5: FFMPEG configuration (optional)</strong><br>
+- Add the path to your php bin under Configuration<br>
+- Add the ffmpeg command under FFMPEG configuration (if it’s not ffmpeg, but something else like /usr/bin/ffmpeg)</p>
+<p><strong>In case you have an older version of ffmpeg, or not all the required ffmpeg plugins</strong> open the file videocron.php and find this line</p>
+<pre>$output ="{ffmpeg-cmd} -i {input} -vcodec libx264 -s {ffmpeg-vsize} -threads 4 -movflags faststart {output}.mp4";
+</pre>
+<p>Change it to an ffmpeg command suited for your environment (ask your server’s admin).<br>
+A common replacement to try:</p>
+<pre>$output ="{ffmpeg-cmd} -i {input} -vcodec libx264 -s {ffmpeg-vsize} -threads 4 {output}.mp4 2&gt;&amp;1";
+</pre>
+<p>Simplest command possible (debugging only):</p>
+<pre>$output ="{ffmpeg-cmd} -y -i {input} {output}.mp4 2&lt;&amp;1"";
+</pre>
+<p>That's it!</p>
+<p><strong><br>
+For details, help, tricks, etc, please <a href="http://www.phprevolution.com/forum/discussions-205/PHPVibe-forum-now-open-for-'verified-clients'-only/" target="_blank">verify your forum account</a> in order to get access to the <a href="http://www.phprevolution.com/forum/code/" target="_blank">#CODE</a> forums.</strong></p>
+
+
+<h3>More details</h3>
+<p>
+After the installation wizard, remove the folder /setup from server.
+	</p>
+<p>
+If you wish to change your admin panel folder name, make sure you edit it in vibe_config.php and also check vibe_setts.php for the hardcoded url rewrite slugs.
+	</p>
+
+
+<p>
+</section>
+<section id="api_functions">
+<h3>Debugging</h3><hr class="notop">
+
+<p>The debugging options are commented and  located in the /index.php.</p>
+
+<pre class="brush: plain">
+//Debugging 
+/*
+if(is_admin()) {
+echo "Time Elapsed: ".(microtime(true) - $sttime)."s <br />";
+echo "Database debug";
+echo '<pre>';
+$db->debug();
+echo '</pre>';
+echo '----------------';
+echo "Cache database debug";
+echo '<pre>';
+$cachedb->debug();
+echo '</pre>';
+}
+*/
+</pre>
+
+You simply need to remove the comment lines.
+<pre class="brush: plain">
+/*
+
+*/
+</pre>
+<h3>Error reporting</h3>
+<p>
+Open index.php (in the root).</p>
+<p>
+At the beginning replace:</p>
+<pre class="brush: plain">
+ error_reporting(0); 
+</pre>
+with:
+
+<pre class="brush: plain">
+error_reporting(E_ALL); 
+</pre>
+</section>
+<section id="fb">
+<h3>Facebook keys </h3><hr class="notop">
+
+<p>A simple tutorial on how to register an app and get the key needed for PHPVibe's Facebook login</p>
+<p><iframe width="480" height="360" src="http://www.youtube.com/embed/1tnJrXroirw?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<h3>Twitter keys </h3><hr class="notop">
+
+<p>A simple tutorial on how to register an app and get the key needed for PHPVibe's twitter login</p>
+<p><iframe width="480" height="360" src="http://www.youtube.com/embed/VVgOd-H8FBk?rel=0" frameborder="0" allowfullscreen></iframe></p>
+
+</section>
+<section id="changelog">
+	<h3>Issues troubleshooting</h3><hr class="notop">
+	<h4> Urls not working (login, register, video, etc)</h4>
+	<p>Make sure your .htaccess file in the root has the following code</p>
+<pre class="brush: plain">
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^embed/([^/]*)/$ /embed.php?id=$1 [L]
+RewriteRule ^feed(.*)$ feed.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/?$ index.php?rp=$1 [L]
+</IfModule>
+<ifModule mod_headers.c>
+    Header set Access-Control-Allow-Origin: *
+</ifModule>
+</pre>
+<p>Ofen servers refuse to overwrite/protect the initial blank .htaccess file.</p>
+<h4>Cron generating to many hits</h4>
+<p>Remove the following code from index.php (in root)</p>
+<pre class="brush: plain">
+/* Crons trigger */
+if(function_exists('exec')) {
+$time_passed = time() - get_option('cron_lastrun');
+$cron_interval = get_option('cron_interval');
+
+if( $time_passed  > $cron_interval) {
+$arrOutput = '';
+update_option('cron_lastrun', time());
+$binpath = get_option('binpath','/usr/bin/php');
+$command = $binpath." -f ".ABSPATH."/cron.php";
+exec( "$command > /dev/null &", $arrOutput );
+}
+}
+</pre>
+<p>If later you wish to use crons, just fire cron.php from your cpanel cron tab.</p>
+<h4>Cannot save videos</h4>
+<p>Make sure you have at least one category created.
+<h4>Video missing after FFMPEG conversion</h4>
+Make sure your server's FFMEPEG version is compatible with PHPVibe or modify PHPVibe's command 
+<pre class="brush: plain">
+$output ="{ffmpeg-cmd} -i {input} -vcodec libx264 -s {ffmpeg-vsize} -threads 4 -movflags faststart {output}.mp4";
+</pre>
+ in videocron.php to be compatible with your FFMPEG.
+</section>
+<section id="further_information">
+	<h3>Further Information</h3><hr class="notop">
+<p>
+	For further information about PHPVibe visit:</p>
+<ul>
+	<li>
+		<a href="http://www.phprevolution.com">PHPVibe.com</a></li>
+	<li>
+		<a href="http://www.phprevolution.com/forum/">PHPVibe Forum</a></li>
+		<li>
+		<a href="http://www.phprevolution.com/installing-phpvibe/">Installing PHPVibe
+</a></li>
+<li>
+		<a href="http://www.phprevolution.com/getting-started-with-phpvibe/">Getting started
+</a></li>
+		
+</ul>
+</section>
+
+	</div>
+</body>
+</html>
